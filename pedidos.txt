@@ -1,0 +1,2 @@
+Cliente: Pet; Valor da compra: 159.0
+Cliente: Pet; Valor da compra: 159.0
