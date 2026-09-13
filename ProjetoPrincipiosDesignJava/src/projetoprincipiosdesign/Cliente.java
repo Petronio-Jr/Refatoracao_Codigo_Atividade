@@ -1,28 +1,23 @@
 package projetoprincipiosdesign;
 
-public class Cliente {
+//Classe abstrata não pode ser instanciada
+public abstract class Cliente {
 
     private String nome;
     private Endereco endereco;
-    private TipoCliente tipo;
 
-    public Cliente(String nome, Endereco endereco, TipoCliente tipo) {
+    public Cliente(String nome, Endereco endereco) {
         this.nome = nome;
         this.endereco = endereco;
-        this.tipo = tipo;
     }
 
-    //Adicionando um enum com os possíveis tipos de cliente
-    public enum TipoCliente {ALUNO, PROFESSOR, FUNCIONARIO};
+    public abstract double calcularDesconto(double totalPedido);
 
     public String obterNomeCidade(){
         return endereco.obterNomeCidade();
     }
 
     //Getters and Setters
-    public TipoCliente getTipo(){
-        return tipo;
-    }
     public String getNome() {
         return nome;
     }

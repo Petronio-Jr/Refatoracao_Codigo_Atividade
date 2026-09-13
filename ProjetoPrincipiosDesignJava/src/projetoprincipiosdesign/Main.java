@@ -9,10 +9,9 @@ public class Main {
         System.out.println("\tLOJA ACADÊMICA");
         System.out.println("===================================");
 
-        Cliente cliente = new Cliente(
+        Cliente cliente = new ClienteAluno(
                 "Pet",
-                new Endereco("Rua Caetés", new Cidade("Alfenas")),
-                Cliente.TipoCliente.ALUNO
+                new Endereco("Rua Caetés", new Cidade("Alfenas"))
         );
 
         Pedido pedido = new Pedido(

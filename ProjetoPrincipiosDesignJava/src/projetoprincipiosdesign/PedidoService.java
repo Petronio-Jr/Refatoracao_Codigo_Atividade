@@ -34,18 +34,7 @@ public class PedidoService {
 
     //Metodo de desconto baseado no tipo do cliente
     public double aplicarDesconto(Double totalPedido, Cliente cliente){
-
-        double valorComDesconto = totalPedido;
-
-        if(cliente.getTipo() == Cliente.TipoCliente.ALUNO){
-            valorComDesconto *= 0.90;
-        }else if(cliente.getTipo() == Cliente.TipoCliente.PROFESSOR){
-            valorComDesconto *= 0.85;
-        }else if(cliente.getTipo() == Cliente.TipoCliente.FUNCIONARIO){
-            valorComDesconto *= 0.80;
-        }
-
-        return valorComDesconto;
+        return cliente.calcularDesconto(totalPedido);
     }
 
 
