@@ -1,10 +1,10 @@
 public class Nintendo implements IConsole{
 
-    private DadosConsole dadosConsole;
+    private DadosConsole dadosConsole = new DadosConsole("Nintendo", 2000);;
 
     @Override
     public void ligar() {
-        System.out.println("Ligando console...");
+        System.out.println("Ligando console Nintendo...");
     }
 
     @Override

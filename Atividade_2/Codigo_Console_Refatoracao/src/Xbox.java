@@ -1,10 +1,10 @@
 public class Xbox implements IConsole{
 
-    DadosConsole dadosConsole;
+    DadosConsole dadosConsole = new DadosConsole("Xbox", 2500);;
 
     @Override
     public void ligar() {
-        System.out.println("Ligando console ...");
+        System.out.println("Ligando console Xbox ...");
     }
 
     @Override

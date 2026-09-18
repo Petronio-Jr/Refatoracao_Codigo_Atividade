@@ -2,7 +2,7 @@ public class PlaystationPortatil extends Playstation{
 
     @Override
     public void ligar() {
-        System.out.println("Playstation Portátil ligado.");
+        System.out.println("Ligando Playstation Portatil ...");
     }
 
     @Override

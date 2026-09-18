@@ -1,15 +1,17 @@
 public class Atividade_POO_Problema {
+
     public static void main(String[] args) {
 
-        Console nintendo = new Console("Nintendo Switch", "nintendo", 2000);
-
-        Console playstation = new Console("Playstation 5", "playstation", 3000);
-
-        Console portatil = new Console("Playstation Portátil","portatil", 2500);
+        IConsole nintendo = new Nintendo();
+        IConsole playstation = new Playstation();
+        IConsole portatil = new PlaystationPortatil();
+        IConsole xbox = new Xbox();
 
         Loja loja = new Loja();
+
         loja.venderConsole(nintendo);
         loja.venderConsole(playstation);
         loja.venderConsole(portatil);
+        loja.venderConsole(xbox);
     }
 }

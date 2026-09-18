@@ -4,7 +4,8 @@ public class Loja {
 
     public void venderConsole(IConsole console) {
         console.ligar();
-        console.calcularPreco();
+        System.out.printf("Preço : %.2f",console.calcularPreco());
+        System.out.println();
     }
 
     public void venderVarios(List<IConsole> consoles){

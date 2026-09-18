@@ -1,10 +1,10 @@
 public class Playstation implements IConsole{
 
-    protected DadosConsole dadosConsole;
+    protected DadosConsole dadosConsole = new DadosConsole("Playstation", 3000);
 
     @Override
     public void ligar() {
-        System.out.println("Ligando console...");
+        System.out.println("Ligando console Playstation...");
     }
 
     @Override

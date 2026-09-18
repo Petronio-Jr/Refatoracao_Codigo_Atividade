@@ -1,4 +1,5 @@
 public class DadosConsole {
+
     private String nome;
     private double precoBase;
 
